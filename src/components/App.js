@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import Home from './Home/Home';
 import Header from "../Shared/components/layout/Header";
+import Content from "../Shared/components/layout/Content";
+import Footer from "../Shared/components/layout/Footer";
 import './App.css';
 
 class App extends Component {
@@ -9,7 +11,10 @@ class App extends Component {
         return(
           <div className="App">
               <Header title= "Learn" />
-              <Home />
+              <Content>
+                  <Home />
+              </Content>
+              <Footer />
           </div>
         );
     }
